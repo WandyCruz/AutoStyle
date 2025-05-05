@@ -1,10 +1,21 @@
+onst menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
 
-const header = document.getElementById('mainHeader');
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.remove('-translate-x-full');
+  document.body.classList.add('overflow-hidden');
+});
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 800) { // si ha bajado más de 100px
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.add('-translate-x-full');
+  document.body.classList.remove('overflow-hidden');
+});
+
+// Cierra menú si se hace clic en un enlace
+document.querySelectorAll('#mobileMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('-translate-x-full');
+    document.body.classList.remove('overflow-hidden');
+  });
 });
