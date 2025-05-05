@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | JDM Garage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ef4444',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md py-4 sticky top-0 z-50 transition-colors duration-300">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-red-600 dark:text-red-400">AutoStyle</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="indect.html" class="hover:text-red-600 dark:hover:text-red-400 transition">Inicio</a>
+        <a href="producto.html" class="hover:text-red-600 dark:hover:text-red-400 transition">Productos</a>
+        <a href="contact.html" class="hover:text-red-600 dark:hover:text-red-400 transition">Contacto</a>
+        <a href="nosotros.html" class="hover:text-red-600 dark:hover:text-red-400 transition">Nosotros</a>
+
+        <button onclick="modo()" class="bg-gray-200 dark:bg-gray-700 text-black dark:text-white px-4 py-2 rounded">
+            Modo oscuro
+          </button>
+          
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Sección de Productos -->
+  <section id="productos" class="py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Nuestros Productos</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Producto 1 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
+          <img src="8ef6ebb2a9ece04ab023fee675c84db4.jpg" alt="Aros JDM" class="w-full h-48 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold">Aros JDM 17"</h3>
+            <p class="text-gray-500 dark:text-gray-400">Aros ligeros de aleación para estilo y rendimiento.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-red-600">$350</span>
+              <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm transition">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
+          <img src="8ef6ebb2a9ece04ab023fee675c84db4.jpg" alt="Escape Deportivo" class="w-full h-48 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold">Escape Deportivo</h3>
+            <p class="text-gray-500 dark:text-gray-400">Mejora el sonido y rendimiento de tu motor.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-red-600">$220</span>
+              <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm transition">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
+          <img src="8ef6ebb2a9ece04ab023fee675c84db4.jpg" alt="Volante Racing" class="w-full h-48 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold">Volante Racing</h3>
+            <p class="text-gray-500 dark:text-gray-400">Diseño ergonómico con acabado premium.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-red-600">$180</span>
+              <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm transition">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Puedes duplicar más productos aquí -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-white py-5 mt-auto">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        
+        <!-- Columna 1: Información -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">AutoStyle</h4>
+          <p class="text-sm text-gray-400 mb-4">
+            En AutoStyle nos especializamos en brindar los mejores servicios de tapicería automotriz con materiales de alta calidad.
+          </p>
+          <a href="contact.html" class="text-red-600 hover:text-red-400">Contáctanos</a>
+        </div>
+        
+        <!-- Columna 2: Enlaces -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Enlaces rápidos</h4>
+          <ul>
+            <li><a href="#" class="text-gray-400 hover:text-white mb-2 block">Inicio</a></li>
+            <li><a href="producto.html" class="text-gray-400 hover:text-white mb-2 block">Productos</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white mb-2 block">Contacto</a></li>
+            <li><a href="nos.html" class="text-gray-400 hover:text-white mb-2 block">Nosotros</a></li>
+          </ul>
+        </div>
+        
+        <!-- Columna 3: Redes Sociales -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Síguenos</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank" class="text-gray-400 hover:text-white mb-2 block">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="text-gray-400 hover:text-white mb-2 block">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank" class="text-gray-400 hover:text-white mb-2 block">
+                Twitter
+              </a>
+            </li>
+
+          </ul>
+        </div>
+  
+        <!-- Columna 4: Información de contacto -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Información de contacto</h4>
+          <p class="text-sm text-gray-400 mb-4">
+            <span class="block">Teléfono: +1 234 567 890</span>
+            <span class="block">Email: contacto@autostyle.com</span>
+          </p>
+          <a href="https://wa.me/1234567890" target="_blank" class="inline-block bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600 transition">WhatsApp</a>
+        </div>
+  
+      </div>
+    </div>
+    
+    <!-- Derechos reservados -->
+    <div class="bg-gray-900 text-center py-5 mt-10">
+      <p class="text-sm text-gray-400">&copy; 2025 AutoStyle. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

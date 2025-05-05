@@ -1,0 +1,45 @@
+
+html {
+  font-size: 16px; /* Tamaño base de la fuente */
+  line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer scroll */
+  font-family: 'Oswald', sans-serif; /* Fuente básica para todo el documento */
+  box-sizing: border-box; /* Para incluir el padding y el border en el tamaño de los elementos */
+ 
+  scroll-padding-top: 200px; /* Ajusta según el alto de tu header */
+}
+
+
+.z-20 { z-index: 990; }
+
+.flecha{
+  animation: parpadeo 2s ease-in-out infinite;
+} 
+
+
+.scrolled{
+  transition: .5 ease-in-out;
+  background: rgba(0, 0, 0, 0.89);
+  box-shadow: 0 0 5px black;
+  
+
+}
+
+.scrolled div nav a{
+  color: rgb(255, 255, 255);
+
+
+}
+@keyframes parpadeo {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
