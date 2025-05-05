@@ -1,4 +1,7 @@
 
+body{
+    background: red;}
+
 html {
   font-size: 16px; /* Tamaño base de la fuente */
   line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
